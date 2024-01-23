@@ -13,6 +13,10 @@
     color: #000;
 }
 
+.white-text {
+    color: #ffffff;
+}
+
 .grey-text {
     color: #6e6e6e;
 }
@@ -128,6 +132,10 @@ padding: 64px 0;
 
 /* BODY */
 
+#sub {
+overflow: hidden;
+}
+
 .picture > img{
     width: 100%;
 }
@@ -139,4 +147,41 @@ padding: 64px 0;
 .pro-price {
     margin-bottom: 15px;
     font-weight: bold;
+}
+
+.sub {
+    padding: 32px 28px;
+}
+
+.sub__head {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.sub__des {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sub__email {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.sub__enter-email {
+    width: 100%;
+    padding: 8px;
+}
+
+.sub__btn {
+    padding: 8px 16px;
+    color: #ffffff;
+    background-color: orangered;
+}
+
+.sub__btn:hover {
+    padding: 8px 16px;
+    color: #000;
+    background-color: #dddddd;
 }
