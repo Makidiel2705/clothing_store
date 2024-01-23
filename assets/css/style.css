@@ -9,6 +9,10 @@
     /* height: 100px; */
 }
 
+.wd-100 {
+    width: 100%;
+}
+
 .black-text {
     color: #000;
 }
@@ -21,12 +25,20 @@
     color: #6e6e6e;
 }
 
-.white-bgr {
-    background-color: #fff;
+.grey-bgr {
+    background-color: #ebebeb;
 }
 
 .black-bgr {
     background-color: #000;
+}
+
+.black-bgr {
+    background-color: #000;
+}
+
+.text-spac {
+    letter-spacing: 0.5px;
 }
 
 .font-24{
@@ -37,16 +49,32 @@
     font-size: 18px;
 }
 
-.font-13{
-    font-size: 13px;
+.font-15{
+    font-size: 15px;
+}
+
+.font-12{
+    font-size: 12px;
+}
+
+.font-9{
+    font-size: 9px;
 }
 
 .font-wei-500{
     font-weight: 500;
 }
 
+.font-wei-400{
+    font-weight: 400;
+}
+
 .family-mont {
     font-family: montserrat, sans-serif;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* DETAILED */
@@ -130,10 +158,15 @@ padding: 64px 0;
     padding-left: 15px;
 }
 
+.number-items {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 /* BODY */
 
 #sub {
-overflow: hidden;
+/* overflow: hidden; */
 }
 
 .picture > img{
@@ -149,8 +182,11 @@ overflow: hidden;
     font-weight: bold;
 }
 
+/* SUBCRIBE */
+
 .sub {
-    padding: 32px 28px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .sub__head {
@@ -184,4 +220,88 @@ overflow: hidden;
     padding: 8px 16px;
     color: #000;
     background-color: #dddddd;
+}
+
+/* ABOUT */
+#about {
+    /* overflow: hidden; */
+}
+
+.about__row {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.contact {
+
+}
+
+.contact__head {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contact__des {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.contact__form {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.contact__form-input {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.text-box {
+    padding: 8px;
+    border: #afafaf solid 1px;
+    color: #999999;
+}
+
+.contact__btn {
+    padding: 8px 16px;
+    border: none;
+}
+
+.contact__btn:hover {
+    color: #000000;
+    background-color: #c5c5c5;
+}
+
+.accept__list > li,
+.about__list > li {
+    list-style: none;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.accept__list > p,
+.store__list > p {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.accept__list i,
+.store__list i {
+    margin-right: 10px;
+    
+}
+
+.social {
+    margin-top: 25px;
+}
+
+/* FOOTER */
+.footer__des {
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.footer__des > a{
+    color: #ffffff;
 }
