@@ -4,9 +4,80 @@
 }
 /* Tablet */
 @media (min-width: 740px) and (max-width: 1023px) {
-
+    .picture__des > h1 {
+        font-size: 54px;
+    }
+    
+    .picture__des > h2 {
+        font-size: 30px;
+        margin-top: 13px;
+        margin-bottom: 25px;
+    }
+    
+    .picture__des > a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        padding: 10px 20px;
+    }
+    
+    .picture__des > a:hover {
+        text-decoration: none;
+        color: #000000;
+        background-color: #ccc;
+    }
+    
+    .news__content {
+        width: auto;
+        top: calc(50% - 128px);
+        left: 0;
+        right: 0;
+    }
 }
+
 /* Mobile */
+
 @media (max-width: 740px) {
 
+    .news__content {
+        width: auto;
+        top: calc(50% - 128px);
+        left: 0;
+        right: 0;
+    }
+
+    .about,
+    .store,
+    .accept
+    .social {
+        padding-top: 15px;
+    }
+    .accept,
+    .store {
+        text-align: center;
+    }
+
+    .picture__des > h1 {
+        font-size: 42px;
+    }
+    
+    .picture__des > h2 {
+        font-size: 24px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .picture__des > a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #000;
+        padding: 8px 16px;
+    }
+    
+    .picture__des > a:hover {
+        text-decoration: none;
+        color: #000000;
+        background-color: #ccc;
+        padding: 8px 16px;
+    }
 }
