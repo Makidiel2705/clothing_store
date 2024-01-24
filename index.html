@@ -17,11 +17,14 @@
             <div id="nav" class="col l-2-4"> 
                 <div class="logo"><h1 class="font-24 black-text font-wei-500">LOGO</h1></div>
                 <div class="content">
-                    <ul class="content__table font-15 content__shirt">
+                    <ul class="content__table font-15 content__shirt font-wei-500">
                         <li><a href="">Shirts</a></li>
                         <li><a href="">Dresses</a></li>
                         <li class="extend">
-                            <a class="grey-text">Jeans <i class="ti-angle-double-down extend-icon" ></i></a>
+                            <label for="extend__checkbox" class="extend__btn">
+                                <a class="black-text">Jeans <i class="ti-angle-double-down extend-icon" ></i></a>
+                            </label>
+                            <input hidden type="checkbox" name="" id="extend__checkbox" class="extend__checkbox">
                             <ul>
                                 <li><a href=""><i class="ti-angle-right right-icon"></i>Skinny</a></li>
                                 <li><a href="">Relaxed</a></li>
@@ -36,7 +39,12 @@
                     </ul>
                     <ul class="content__table content__navig font-12">
                         <li><a href="">Contacts</a></li>
-                        <li><a href="">Newsletter</a></li>
+                        <li>
+                            <label for="news" class="extend__btn">
+                                <a class="black-text">Newsletter</a>
+                            </label>
+                        </li>
+                        
                         <li><a href="">Subscribe</a></li>
                     </ul>
                 </div>
@@ -75,60 +83,108 @@
                         <div class="col l-12"><p class="number-items grey-text">8 items</p></div>
                     </div>
                     <div id="list-items">
-                        <div class="row">
+                        <div class="row font-15">
                             <div class="col l-3">
                                 <div class="product">
-                                    <div class="picture"><img src="./assets/img/jeans1.jpg" alt=""></div>
-                                    <p class="pro-name grey-text">Ripped Skinny Jeans</p>
+                                    <h4 class="product__new black-bgr white-text">New</h4>
+                                    <div class="picture">
+                                        <img src="./assets/img/jeans1.jpg" alt="">
+                                        <div class="picture__buy">
+                                            <h3 class="black-bgr white-text font-wei-400 font-15">Buy now <i class="ti-shopping-cart"></i></h3>
+                                        </div>
+                                    </div>
+                                    <p class="pro-name grey-text">Mega Ripped Jeans</p>
                                     <p class="pro-price grey-text">$24.99</p>
                                 </div>
                             </div>
                             <div class="col l-3">
                                 <div class="product">
-                                    <div class="picture"><img src="./assets/img/jeans2.jpg" alt=""></div>
-                                    <p class="pro-name grey-text">Ripped Skinny Jeans</p>
+                                    <h4 class="product__new black-bgr white-text">New</h4>
+                                    <div class="picture">
+                                        <img src="./assets/img/jeans2.jpg" alt="">
+                                        <div class="picture__buy">
+                                            <h3 class="black-bgr white-text font-wei-400 font-15">Buy now <i class="ti-shopping-cart"></i></h3>
+                                        </div>
+                                    </div>
+                                    <p class="pro-name grey-text">Mega Ripped Jeans</p>
                                     <p class="pro-price grey-text">$24.99</p>
                                 </div>
                             </div>
                             <div class="col l-3">
                                 <div class="product">
-                                    <div class="picture"><img src="./assets/img/jeans3.jpg" alt=""></div>
-                                    <p class="pro-name grey-text">Ripped Skinny Jeans</p>
+                                    <h4 class="product__new black-bgr white-text">New</h4>
+                                    <div class="picture">
+                                        <img src="./assets/img/jeans3.jpg" alt="">
+                                        <div class="picture__buy">
+                                            <h3 class="black-bgr white-text font-wei-400 font-15">Buy now <i class="ti-shopping-cart"></i></h3>
+                                        </div>
+                                    </div>
+                                    <p class="pro-name grey-text">Mega Ripped Jeans</p>
                                     <p class="pro-price grey-text">$24.99</p>
                                 </div>
                             </div>
                             <div class="col l-3">
                                 <div class="product">
-                                    <div class="picture"><img src="./assets/img/jeans4.jpg" alt=""></div>
-                                    <p class="pro-name grey-text">Ripped Skinny Jeans</p>
+                                    <h4 class="product__new black-bgr white-text">New</h4>
+                                    <div class="picture">
+                                        <img src="./assets/img/jeans4.jpg" alt="">
+                                        <div class="picture__buy">
+                                            <h3 class="black-bgr white-text font-wei-400 font-15">Buy now <i class="ti-shopping-cart"></i></h3>
+                                        </div>
+                                    </div>
+                                    <p class="pro-name grey-text">Mega Ripped Jeans</p>
                                     <p class="pro-price grey-text">$24.99</p>
                                 </div>
                             </div>
                             <div class="col l-3">
                                 <div class="product">
-                                    <div class="picture"><img src="./assets/img/jeans5.jpg" alt=""></div>
-                                    <p class="pro-name grey-text">Ripped Skinny Jeans</p>
+                                    <h4 class="product__new black-bgr white-text">Sale</h4>
+                                    <div class="picture">
+                                        <img src="./assets/img/jeans5.jpg" alt="">
+                                        <div class="picture__buy">
+                                            <h3 class="black-bgr white-text font-wei-400 font-15">Buy now <i class="ti-shopping-cart"></i></h3>
+                                        </div>
+                                    </div>
+                                    <p class="pro-name grey-text">Mega Ripped Jeans</p>
                                     <p class="pro-price grey-text">$24.99</p>
                                 </div>
                             </div>
                             <div class="col l-3">
                                 <div class="product">
-                                    <div class="picture"><img src="./assets/img/jeans6.jpg" alt=""></div>
-                                    <p class="pro-name grey-text">Ripped Skinny Jeans</p>
+                                    <h4 class="product__new black-bgr white-text">Sale</h4>
+                                    <div class="picture">
+                                        <img src="./assets/img/jeans6.jpg" alt="">
+                                        <div class="picture__buy">
+                                            <h3 class="black-bgr white-text font-wei-400 font-15">Buy now <i class="ti-shopping-cart"></i></h3>
+                                        </div>
+                                    </div>
+                                    <p class="pro-name grey-text">Mega Ripped Jeans</p>
                                     <p class="pro-price grey-text">$24.99</p>
                                 </div>
                             </div>
                             <div class="col l-3">
                                 <div class="product">
-                                    <div class="picture"><img src="./assets/img/jeans7.jpg" alt=""></div>
-                                    <p class="pro-name grey-text">Ripped Skinny Jeans</p>
+                                    <h4 class="product__new black-bgr white-text">Sale</h4>
+                                    <div class="picture">
+                                        <img src="./assets/img/jeans7.jpg" alt="">
+                                        <div class="picture__buy">
+                                            <h3 class="black-bgr white-text font-wei-400 font-15">Buy now <i class="ti-shopping-cart"></i></h3>
+                                        </div>
+                                    </div>
+                                    <p class="pro-name grey-text">Mega Ripped Jeans</p>
                                     <p class="pro-price grey-text">$24.99</p>
                                 </div>
                             </div>
                             <div class="col l-3">
                                 <div class="product">
-                                    <div class="picture"><img src="./assets/img/jeans8.jpg" alt=""></div>
-                                    <p class="pro-name grey-text">Ripped Skinny Jeans</p>
+                                    <h4 class="product__new black-bgr white-text">Sale</h4>
+                                    <div class="picture">
+                                        <img src="./assets/img/jeans8.jpg" alt="">
+                                        <div class="picture__buy">
+                                            <h3 class="black-bgr white-text font-wei-400 font-15">Buy now <i class="ti-shopping-cart"></i></h3>
+                                        </div>
+                                    </div>
+                                    <p class="pro-name grey-text">Mega Ripped Jeans</p>
                                     <p class="pro-price grey-text">$24.99</p>
                                 </div>
                             </div>
@@ -217,7 +273,19 @@
                 </div>
             </div>
         </div>
+        <div class="news">
+            <input type="checkbox" name="" id="news" class="news__checkbox">
+            <div class="background"></div>
+            <div class="news__content">
+                <h1 class="news__content-head">NEWSLETTER</h1>
+                <label for="news" class="news__close-btn"><i class="ti-close"></i></label>
+                <p class="news__content-des">Join our mailing list to receive updates on new arrivals and special offers.</p>
+                <div class="sub__email">
+                    <input required class="sub__enter-email" type="text" placeholder="Enter E-mail">
+                </div>
+                <label for="news" class="sub__btn font-18">Subscribe</label>
+            </div>
+        </div>
     </div>    
-    
 </body>
 </html>

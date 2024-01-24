@@ -8,17 +8,12 @@ html {
     scroll-behavior: smooth;
 }
 
-.col {
-    /* background-color: orange; */
-    /* height: 100px; */
-}
-
 .wd-100 {
     width: 100%;
 }
 
 .black-text {
-    color: #000;
+    color: #000 !important;
 }
 
 .white-text {
@@ -29,12 +24,12 @@ html {
     color: #6e6e6e;
 }
 
-.grey-bgr {
-    background-color: #ebebeb;
+.white-bgr {
+    background-color: #fff;
 }
 
-.black-bgr {
-    background-color: #000;
+.grey-bgr {
+    background-color: #ebebeb;
 }
 
 .black-bgr {
@@ -100,11 +95,11 @@ padding: 64px 0;
     list-style: none;
 }
 
-.content__shirt > li > a{
+.content__shirt a{
     color: #686868;
 }
 
-.content__table li:hover {
+.content__table > li:hover > a{
     background-color: #ccc;
     color: #000;
 }
@@ -126,6 +121,7 @@ padding: 64px 0;
 .extend > ul {
     padding-left: 12px;
 }
+
 .extend > ul li:first-child a{
     color: #000;
     background-color: #ebebeb;
@@ -135,8 +131,22 @@ padding: 64px 0;
     color: #686868;
 }
 
+.extend ul li:hover a{
+    background-color: #ccc;
+    color: #000;
+}
+
+.extend__btn:hover a{
+    background-color: #ccc;
+    color: #000;
+}
+
 .extend-icon {
     font-size: 14px;
+}
+
+.extend__checkbox:checked + ul{
+    display: none;
 }
 
 .right-icon {
@@ -167,6 +177,61 @@ padding: 64px 0;
     margin-bottom: 15px;
 }
 
+.background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.news__content {
+    z-index: 1;
+    position: fixed;
+    top: calc(50% - 128px);
+    left: calc(50% - 418px);
+    width: 836px;
+    max-width: 100%;
+    height: 256px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 32px;
+}
+
+.news__close-btn {
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 25px;
+    padding: 9px;
+}
+
+.news__close-btn:hover {
+    background-color: #ccc;
+}
+
+.news__content-head {
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.news__content-des {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.news__checkbox ~ div {
+    display: none;
+}
+
+.news__checkbox:checked ~ div{
+    animation: fadeIn 1s ease;
+    display: flex;
+}
+
 /* BODY */
 
 #sub {
@@ -177,14 +242,18 @@ padding: 64px 0;
     position: relative;
 }
 
+.picture {
+    position: relative;
+}
+
 .picture > img{
     width: 100%;
 }
 
 .picture__des {
     position: absolute;
-    top: 20px;
-    left: 20px;
+    top: 45px;
+    left: 30px;
 }
 
 .picture__des > h1 {
@@ -211,6 +280,18 @@ padding: 64px 0;
     padding: 12px 24px;
 }
 
+.product {
+    position: relative;
+    top: 0;
+    right: 0;
+}
+
+.product__new {
+    position: absolute;
+    padding: 4px 8px;
+    font-weight: 300;
+}
+
 .pro-name {
     margin-top: 15px;
 }
@@ -218,6 +299,26 @@ padding: 64px 0;
 .pro-price {
     margin-bottom: 15px;
     font-weight: bold;
+}
+
+.picture__buy {
+    display: none;
+}
+
+.picture__buy:hover h3{
+    background-color: #ccc;
+    color: #000;
+}
+
+.picture__buy h3 {
+    padding: 8px 16px;
+}
+
+.product:hover .picture__buy {
+    display: block;
+    position: absolute;
+    top: calc(50% - 17px);
+    right: calc(50% - 60px);
 }
 
 /* SUBCRIBE */
@@ -241,6 +342,7 @@ padding: 64px 0;
 .sub__email {
     margin-top: 15px;
     margin-bottom: 15px;
+    width: 100%;
 }
 
 .sub__enter-email {
@@ -253,6 +355,7 @@ padding: 64px 0;
     color: #ffffff;
     background-color: orangered;
     cursor: pointer;
+    border: none;
 }
 
 .sub__btn:hover {
@@ -344,4 +447,15 @@ padding: 64px 0;
 
 .footer__des > a{
     color: #ffffff;
+}
+
+/* ANIMATION */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
